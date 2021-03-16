@@ -128,6 +128,7 @@ public class Graph {
             int index = 0;
             int number = sorted.get(i).get(0);
             for (int k = 0; k < 26; k++) {
+                check = true;
                 for (int j = 1; j < sorted.get(i).size(); j++) {
                     if (col[k].equals(result[sorted.get(i).get(j)])) {
                         check = false;
